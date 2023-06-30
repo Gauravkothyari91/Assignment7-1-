@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .go {
+            padding: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li {
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            justify-content: center;
+        }
+
+        ul li a:hover {
+            color: grey;
+            cursor: pointer;
+        }
+
+        .log {
+            padding-left: 40%;
+            padding-top: 20px;
+        }
+
+        .btn {
+            font-size: 24px;
+            background-color: #4c92f5;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        .value1 {
+            margin-top: 110px;
+        }
+
+        .blue {
+            color: blue;
+            font-size: 45px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .first {
+            margin: 10px 10px;
+        }
+
+        .sec {
+            color: blue;
+            margin: 5px 15px;
+        }
+
+        .card {
+            margin: 30px 16px;
+        }
+
+        p {
+            margin: 8px 15px;
+        }
+
+        p2 {
+            margin: 8px 15px;
+        }
+        .value2{
+           float: right; 
+           margin-top: -380px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .navbar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: black;
+            width: 1120px;
+        }
+
+        .value2{
+           float: left; 
+           margin-top: 0px;
+        }
+        }
+
+        @media screen and (max-width: 1140px) {
+            .btn {
+            font-size: 24px;
+            background-color: #4c92f5;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 590px;
+        }
+
+          .navbar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: black;
+            width: 1120px;
+        }
+        }
+
+        @media screen and (max-width: 576px) {
+            .menu{
+                width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 1010px;
+    margin-top: -28px;
+}
+
+.btn {
+            font-size: 24px;
+            background-color: #4c92f5;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 590px;
+            opacity: 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            justify-content: center;
+            opacity: 0;
+        }
+        .go {
+            padding: 10px;
+        }
+}
+
+@media screen and (min-width: 576px){
+            .menu {
+                width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 90%;
+    margin-top: -24px;
+    opacity: 0;
+}
+
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="unodr">
+            <div class="logo">
+                <img src="go.jpg" alt="logo" width="80px" class="go">
+            </div>
+            <li class="iitem"><a href="#Home">Home</a></li>
+            <li class="iitem"><a href="#Blog">Blog</a></li>
+            <li class="iitem"><a href="#About">About</a></li>
+            <li class="iitem"><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="log">
+            <button class="btn">Login</button>
+        </div>
+    </nav>
+
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div class="menu"></div>
+
+
+    <section>
+       <div class="value1">
+        <h1 class="first">Say Hi To</h1>
+        <h1 class="blue">One Card</h1>
+        <h1 class="sec">Co-branded Card issuers :</h1>
+        <img src="card.png" alt="" width="400px" class="card">
+        <p>India's best metal credit card. Built with full-stack tech. Backed by the </p>
+        <p class="p2">principles of simplicity, transparency, and giving back control to the user.</p>
+       </div>
+
+       <div class="value2">
+        <video src="hi.mp4" width="600px"></video>
+       </div>
+    </section>
+</body>
+
+</html>

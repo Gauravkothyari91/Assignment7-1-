@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+        footer{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: black;
+            margin-top: 60px;
+            color: white;
+            height: 515px;
+        }
+        .item1{
+            margin-top: 150px;
+            margin-left: 50px;
+        }
+        .item1>p{
+            margin-top: 30px;
+            color: #777272;
+            font-size: 25px;
+        }
+
+        .item2{
+            margin-top: 150px;
+        }
+
+        .item2>h1{
+            margin-left: 70px;
+        }
+
+        .item2>a{
+            display: block;
+            text-decoration: none;
+            margin-top: 30px;
+            color: #777272;
+            font-size: 25px;
+            margin-left: 70px;
+        }
+
+        .item3{
+            margin-top: 150px;
+        }
+
+        .item3>h1{
+            margin-left: 50px;
+        }
+
+        .item3>a{
+            display: block;
+            text-decoration: none;
+            margin-top: 30px;
+            color: #777272;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+
+        .item4{
+            margin-top: 150px;
+        }
+        .item4>input{
+            width: 270px;
+            height: 40px;
+        }
+        .btn{
+            background-color: #1c81a9;
+        }
+        .btn::placeholder{
+            color: white;
+            text-align: center;
+        }
+        @media screen and (max-width: 1000px){
+            footer{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            margin-top: 60px;
+            color: white;
+            height: 90%;
+        }
+        
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="item1">
+            <h1>One Card</h1>
+            <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <div class="item2">
+            <h1>Navigation</h1>
+            <a href="#Home">Home</a>
+            <a href="#About">About Us</a>
+            <a href="#Carrers">Carrers</a>
+            <a href="#Offers">Offers</a>
+        </div>
+        <div class="item3">
+            <h1>Support</h1>
+            <a href="#">F.A.Q</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="item4">
+            <h1>Newsletter</h1>
+            <input type="text" placeholder="Your email id here">
+            <input type="text" placeholder="Subscribe" class="btn">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(255, 255, 214, 0.806);
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: black;
+            height: 10vh;
+        }
+
+        .item1 {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1%;
+        }
+
+        .content {
+            margin-top: 6%;
+            text-align: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #4b4bef;
+            color: white;
+            margin-left: 250%;
+            margin-top: 8%;
+            font-size: 1.2rem;
+        }
+
+        .logo {
+            margin-top: 3%;
+            margin-left: 3%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .menu{
+                width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 90%;
+    margin-top: -24px;
+}
+.btn {
+            text-decoration: none;
+            background-color: #4b4bef;
+            color: white;
+            margin-left: 250%;
+            margin-top: 8%;
+            font-size: 1.2rem;
+            opacity: 0;
+        }
+
+        .item1 {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1%;
+            opacity: 0;
+        }
+        } 
+
+
+        @media screen and (min-width: 576px){
+            .menu {
+                width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 90%;
+    margin-top: -24px;
+    opacity: 0;
+}
+            .btn {
+            text-decoration: none;
+            background-color: #4b4bef;
+            color: white;
+            margin-left: 250%;
+            margin-top: 8%;
+            font-size: 1.2rem;
+            opacity: 1;
+        }
+
+        .item1 {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1%;
+            opacity: 1;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="go.jpg" alt="Logo" width="80px">
+        </div>
+        <div class="content">
+            <a href="#" class="item1">Home</a>
+            <a href="#" class="item1">Blog</a>
+            <a href="#" class="item1">About</a>
+            <a href="#" class="item1">Contact</a>
+        </div>
+        <div class="item2">
+            <button class="btn">Login</button>
+        </div>
+
+    </nav>
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div class="menu"></div>
+</body>
+
+</html>
